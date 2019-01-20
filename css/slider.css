@@ -1,0 +1,51 @@
+.slider{
+    width:100%;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.slider .wraper{
+    width: 100%;
+    height: 100%;
+    background: #ccc;
+}
+.slider .wraper .mover{
+    width: 200%;
+    height: 100%;
+    font-size: 0;
+}
+.slider .wraper .mover .slide{
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+}
+.slider .arrow{
+    position: absolute;
+    top:50%;
+    height: 50px;
+    width: 50px;
+    margin-top: -25px;
+    background: #336699;
+}
+.slider .arrow-left{left: 0}
+.slider .arrow-right{right: 0}
+.wraper2{
+    position: absolute;
+    bottom: 20px;
+
+}
+
+.slide > .itemPreview {
+    width: auto;
+    height: 100vh;
+    position: static;
+}
+
+.slide .wrapFoto{
+    width: 80%;
+    height: auto;
+}
+

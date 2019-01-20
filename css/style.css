@@ -49,7 +49,9 @@ h3{width:100%; font-size: 18px; line-height: 30px; text-transform: uppercase; co
 /*item*/
 .itemPreview{width: 200px; height: 240px; border-radius: 3%; padding: 25px 20px 20px 20px;
     /*margin-left: 20px; */
-    margin-bottom: 20px; background: #fff; position: relative}
+    margin-bottom: 20px; background: #fff;
+    position: relative
+}
 .itemPreview:hover{box-shadow: 0px 1px 10px 0px;}
 /*.itemPreview:first-child{margin-left: 0px;}*/
 .itemPreview:last-child{align-self: flex-start ;}
@@ -60,7 +62,7 @@ h3{width:100%; font-size: 18px; line-height: 30px; text-transform: uppercase; co
 .namePreview:hover{color:#6b626a;}
 .wrapFoto{width: 130px; height: 100px; display: block; margin: 15px auto ;  overflow: hidden; background: url("../images/4.jpg") center;
     background-size: cover;  }
-.wrapFoto:hover{margin:10px auto; width: 140px; height: 110px;}
+/*.wrapFoto:hover{margin:10px auto; width: 140px; height: 110px;}*/
 .wrapFoto img{width:100%; height:100%; opacity: 0;}
 
 .lineInfo{display: flex; justify-content: space-between;  align-items: flex-end;  }
