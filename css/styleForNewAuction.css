@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+*, html, body{margin: 0; padding: 0; list-style: none; box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    font-size: 16px; }
+
+body{background-image: url("../images/magic-the-gathering.jpg"); background-attachment: fixed; background-position: center;
+    background-size: cover; }
+
+/*header*/
+.btnMenu{display: none}
+
+.containerTop, .containerDown{width: 100%; height: auto;
+    background-image: linear-gradient( to bottom, #000 0%, #25273c 45%, #282a3f 50%, #25273c 55%, #000 100%);
+    }
+.wrapTopContainer{ width: 90%; display: flex; justify-content: space-between; align-items: center; padding: 20px; margin: 0 auto;}
+.containerTitle{display: flex}
+.wrapLogo{width:60px; height: 60px; border-radius: 50%; overflow: hidden}
+.logo{width: 100%}
+.wrapH{margin-left: 20px}
+h1{color: #fff;}
+.wrapH p{color:#fff}
+
+/*header*//*topMenu*/
+.topMenu{display: flex}
+.topMenuItem{margin-left: 5px; border-right: 1px solid #bcbcc2;}
+.topMenuItem:first-child{margin-left: 0px; }
+.topMenuItem:last-child{border-right: none; }
+.linkMenu{display:block; font-size: 16px; color: #bcbcc2; text-transform: capitalize;  padding: 5px}
+.topMenuItem:hover{border-color: #fff; }
+.topMenuItem:hover .linkMenu{color:#fff; }
+
+.wrapTopLine{display: flex; position: relative;  }
+.input_search{font-size: 14px; padding: 5px 20px; border-radius: 5px; }
+.input_search::-webkit-search-cancel-button{display: none}
+.search{font-size: 14px; padding: 5px; border-radius: 5px; background: #fff; color: darkslategray;}
+.enter{margin-left: 20px;  font-size: 14px; color:#bcbcc2;  text-transform: uppercase; padding: 5px}
+.enter:hover{ border-radius: 5px; color:#fff; }
+
+/*content*/
+.containerContent{width: 90%; height: calc(100vh - 100px); margin: 0 auto; padding-top: 10px}
+
+/*заголовок страницы*/
+h3{
+    width:100%; font-size: 18px; line-height: 30px; text-transform: uppercase; color: #fff; text-align: center; border-radius: 10px 10px 0 0;
+    background-image: linear-gradient( to bottom, #000 0%, #25273c 45%, #282a3f 50%, #25273c 55%, #000 100%)}
+
+/*Форма нового аукциона*/
+.formAuction{
+    background: #ffffffd6; padding: 10px 15px 30px 15px;}
+.wrapLot{width: 100%; display: flex; justify-content: space-between; background: transparent; margin-bottom: 15px;}
+.cont{ padding: 15px 15px 15px 20px; background: #fff;}
+
+.leftContainer{width: 35%;     border-radius: 0px 15px 15px 0px }
+#upload-image{ display: none; width: 100px; height: 100px; background: red;}
+.input_line{margin-bottom: 5px; display: flex; justify-content: flex-start;}
+.input_line>label{width: 30%; display: block; position: relative; }
+.input_line>label::before{content: "*"; display: block; color: red; position: absolute; top:0px; left:-10px;}
+.input_line>input{width: 200px; height: 20px; line-height: 20px; border: 1px solid #000;}
+
+.rightContainer{width: 65%; border-radius: 15px 0px 0px 15px }
+.wrapContainerParams{}
+.lineAddGoods{margin-bottom: 10px;}
+.lineAddGoods>p{display: inline-block; font-weight: bold; font-size: 20px;}
+.lineAddGoods .add_tovar{width: 20px; background: #6b626a; color:#fff; font-size: 18px; font-weight: bold;}
+.lineAddGoods .add_tovar:hover{background:  #272a5f;}
+
+
+.wrap_new_good{ position: relative; padding: 15px 10px ; margin-bottom: 15px; background: #e8dfdf;}
+.flex{display: flex;}
+.wrap_new_good .mb{margin-bottom: 15px;}
+.wrap_new_good .flex label:first-child{margin-right: 10px;}
+#newGoodName{width: 170px; padding-left: 5px;}
+#goodCategory{width: 120px;}
+
+.line_tovar{display: flex; justify-content: space-between; background: #e8dfdf; margin-bottom: 5px; padding: 5px 15px; }
+.line_tovar:hover{box-shadow: 0px 1px 7px 1px #000;}
+.tovar{display: flex; justify-content: flex-start;}
+.line_tovar:nth-child(2n){background: #c8c9d2;}
+.line_elem{margin-right: 10px; font-style: italic;}
+.line_elem:first-child{font-weight: bold; font-style: normal;}
+.line_tovar .button{ border-radius: 3px; background: #6b626a; color: #fff; padding: 2px 4px;}
+.line_tovar .button:hover{ background: #272a5f;}
+
+.wrap_category_parameters{ display: flex; flex-wrap: wrap;  padding: 5px; margin-bottom: 10px; background: transparent;}
+.attr_select{margin-bottom: 20px;  margin-right: 5px; border-radius: 5px;}
+.line_buttons{justify-content: flex-end; }
+.line_buttons>.button:last-child{margin-left: 15px}
+.line_buttons>.button{background: #6b626a; color:#fff; font-size: 18px; font-weight: bold;}
+#delPamams, #addPamams{width: 60px; padding: 2px 5px;}
+.line_buttons>.button:hover{background:  #272a5f;}
+
+.title{font-size: 20px; text-transform: capitalize;}
+#about{width: 100%; min-height: 60px; max-height: 120px; overflow-y: scroll; resize: none; padding: 5px 10px; margin-bottom: 10px;}
+
+.button{ display: inline-block; border-radius: 5px;  text-align: center; cursor: pointer;}
+.line_button{display: flex; justify-content: flex-end;}
+.createLot{ width: 80px; background: #6b626a;; color: #fff; padding: 5px 10px; text-align: center; font-size: 20px; font-weight: bold;}
+.createLot:hover{background: #e23e3d;}
+.add{width: 55px;}
+.containerDown{height: 50px;}
+
+
+/*Особистий кабінет*/
+
+/*заголовок*/
+h3{width:100%; font-size: 18px; line-height: 30px; text-transform: uppercase; color: #fff; text-align: center; border-radius: 10px 10px 0 0;
+    background-image: linear-gradient( to bottom, #000 0%, #25273c 45%, #282a3f 50%, #25273c 55%, #000 100%)}
+
+.commonContainer{background: #ffffffd6; display: flex;}
+.privateMenu{background: yellow; width: 30%; padding: 20px 15px 20px 30px;}
+.item{}
+
+.item>a{display: block}
+
+
+
+
