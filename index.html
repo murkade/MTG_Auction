@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>WB Auction</title>
     <link rel="stylesheet" href="./css/styleForNewAuction.css" type="text/css">
+    <script src="./JS_for_HTML/jquery-3.1.1.min.js"></script>
 </head>
 <body>
     <header>
@@ -31,10 +32,10 @@
                     <li class="topMenuItem"><a href="" class="linkMenu">AD_panel</a></li>
                 </ul>
                 <div class="wrapTopLine">
-                    <div class="wrapSearch">
+                    <form  action="" method="post" class="wrapSearch">
                         <input type="search" class="input_search" placeholder="что ищем?">
                         <button class="btn search">Поиск</button>
-                    </div>
+                    </form>
                     <a href="" class="enter">Войти</a>
                 </div>
             </div>
@@ -43,7 +44,7 @@
     </header>
     <div class="containerContent">
         <h3>Создание нового лота</h3>
-        <form action="" class="formAuction">
+        <form action="" class="formAuction" type="post" enctype="multipart/form-data">
         <div class="wrapLot">
             <div class="leftContainer cont">
                 <div class="input_line">
@@ -174,39 +175,64 @@
         </div>
         </form>
 
+
+
+
+
         <h3>Личный кабинет</h3>
         <div class="commonContainer">
             <nav>
                 <ul class="privateMenu">
-                    <li class="item"><a href="">Сообщения</a>
+                    <li class="item "><a href="" class="item_link after">Сообщения</a>
                         <ul class="submenu">
-                            <li><a href="">входящие</a></li>
-                            <li><a href="">отправленные</a></li>
-                            <li><a href="">новое</a></li>
+                            <li class="item_2"><a href="" class="item_link2"> - входящие</a></li>
+                            <li class="item_2 "><a href="" class="item_link2">отправленные</a></li>
+                            <li class="item_2"><a href="" class="item_link2">новое</a></li>
                         </ul>
                     </li>
-                    <li class="item"><a href="">Мои лоты</a>
+                    <li class="item"><a href="" class="item_link after">Мои лоты</a>
                         <ul class="submenu">
-                            <li><a href="">активные</a></li>
-                            <li><a href="">архивные</a></li>
-                            <li><a href="">все</a></li>
+                            <li class="item_2"><a href="" class="item_link2">активные</a></li>
+                            <li class="item_2"><a href="" class="item_link2">архивные</a></li>
+                            <li class="item_2"><a href="" class="item_link2">все</a></li>
                         </ul>
                     </li>
-                    <li class="item"><a href="">Мои ставки</a>
+                    <li class="item"><a href="" class="item_link after">Мои ставки</a>
                         <ul class="submenu">
-                            <li><a href="">активные</a></li>
-                            <li><a href="">архивные</a></li>
-                            <li><a href="">все</a></li>
+                            <li class="item_2"><a href="" class="item_link2">активные</a></li>
+                            <li class="item_2"><a href="" class="item_link2">архивные</a></li>
+                            <li class="item_2"><a href="" class="item_link2">все</a></li>
                         </ul>
                     </li>
-                    <li class="item"><a href="">Создать новый лот</a></li>
-                    <li class="item"><a href="">Профиль</a></li>
+                    <li class="item" ><a href="" class="item_link profile">Профиль</a></li>
+                    <li class="item"><a href="" class="item_link">Создать новый лот</a></li>
                 </ul>
             </nav>
+            <div class="menuContent">
+                <div class="pageContent reddd " data-class="red">
+                    <h5>сообщения</h5>
+                    <div class="wrapContent"></div>
+                </div>
+                <div class="pageContent gren">
+                    <h5>Лоты</h5>
+                    <div class="wrapContent"></div>
+                </div>
+                <div class="pageContent blue">
+                    <h5>Ставки</h5>
+                    <div class="wrapContent"></div>
+                </div>
+                <div class="pageContent reddd">
+                    <h5>Profile</h5>
+                    <div class="wrapContent"></div>
+                </div>
+            </div>
         </div>
+        <div class="red"></div>
     </div>
-</body>
 <footer>
     <!--<div class="containerDown"></div>-->
 </footer>
+
+<script src="./JS_for_HTML/script.js"></script>
+</body>
 </html>

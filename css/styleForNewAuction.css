@@ -93,7 +93,7 @@ h3{
 .line_buttons>.button:hover{background:  #272a5f;}
 
 .title{font-size: 20px; text-transform: capitalize;}
-#about{width: 100%; min-height: 60px; max-height: 120px; overflow-y: scroll; resize: none; padding: 5px 10px; margin-bottom: 10px;}
+#about{width: 100%; min-height: 60px; max-height: 120px; overflow-y: scroll; resize: none; padding: 5px 10px; margin-bottom: 20px;}
 
 .button{ display: inline-block; border-radius: 5px;  text-align: center; cursor: pointer;}
 .line_button{display: flex; justify-content: flex-end;}
@@ -109,12 +109,38 @@ h3{
 h3{width:100%; font-size: 18px; line-height: 30px; text-transform: uppercase; color: #fff; text-align: center; border-radius: 10px 10px 0 0;
     background-image: linear-gradient( to bottom, #000 0%, #25273c 45%, #282a3f 50%, #25273c 55%, #000 100%)}
 
-.commonContainer{background: #ffffffd6; display: flex;}
-.privateMenu{background: yellow; width: 30%; padding: 20px 15px 20px 30px;}
-.item{}
+.commonContainer{background: #ffffffd6; display: flex; padding: 10px;}
+nav{width: 25%; height: auto;}
+.privateMenu{ width: 100%; padding: 20px 10px; background: #fff; border-radius: 0% 15px 15px 0%;}
+.item{margin-bottom: 5px;padding: 0px 10px 0px 20px; }
+.item .item_link{position: relative; display: block;  padding: 5px 0px; color:#000; font-weight: bold; }
+.item_link.after::after{content: ">"; display: block; width: 50px; height: 5px; transform: rotate(90deg); color:#000;
+    font-weight: bold; position: absolute; top:33px; right:33px;}
+.item:hover .item_link{color: dodgerblue;}
+.item:hover .item_link.after::after{color:dodgerblue}
+.item.active .item_link, .item.active .after::after {color: dodgerblue; }
+.item.active .after::after{content: "<";}
 
-.item>a{display: block}
+.submenu{display: none;}
+.submenu .item_2{margin-bottom: 5px;}
+.submenu .item_2>a{ }
+.submenu .item_2:hover >a{color:dodgerblue; }
+.submenu .item_2>a{display: block; position: relative; text-transform: lowercase; padding-left: 20px; color: #000;}
 
+.privateMenu .item.active .submenu{display: block;}
+.submenu .item_2.active> a{color:dodgerblue;}
 
+.menuContent{width: 75%;
+    background: #fff; height: auto; border-radius: 15px 0px 0px 15px; padding: 15px;}
 
+.pageContent{width: 100%; height: 100%; display: none; padding: 5px 15px;}
+.pageContent.active{display: block;}
+.pageContent>h5{font-size: 16px; text-align: center; text-transform: uppercase;}
+.wrapContent{padding: 0px 20px; width:100%; height: 100%; display: flex; }
 
+.reddd{background: red}
+.gren{background: green}
+.blue{background: lightseagreen}
+
+.red{height: 20px; background: red;
+}
